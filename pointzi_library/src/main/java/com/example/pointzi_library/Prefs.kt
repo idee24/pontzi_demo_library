@@ -8,7 +8,7 @@ import java.util.*
  *@Created by Yerimah on 5/21/2021.
  */
 
-val FIRST_TIME_KEY = "first_time"
+val FIRST_TIME_KEY = "first_time_key"
 val FIRST_TIME = "first_time"
 
 fun isFirstTime(context: Context) {

@@ -26,9 +26,8 @@ class MainDialog(private val appContext: Context,
                  private val currentTime: String): Dialog(appContext, R.style.CustomDialogTheme) {
 
     private lateinit var binding: DialogMainBinding
-    private val imageUrl = "https://www.google.com/url?sa=i&url=https%3A%2F%2Funsplash.com%2Fwall" +
-            "papers&psig=AOvVaw2enaluHrORxn1k6ujB5WPJ&ust=1621704293565000&source=images&cd=vfe&ved" +
-            "=0CAIQjRxqFwoTCOj7wMil2_ACFQAAAAAdAAAAABAD"
+    private val imageUrl = "https://images.unsplash.com/photo-1472457897821-70d3819a0e24?ixid=Mnw" +
+            "xMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=749&q=80"
     private var isActive = true
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -51,10 +50,9 @@ class MainDialog(private val appContext: Context,
             delay(1000)
             CoroutineScope(Main).launch {
                 if (isActive) {
-
-                    val currentTime = SimpleDateFormat("hh:mm aa dd MMM yy", Locale.getDefault()).format(Date())
+                    val currentTime = SimpleDateFormat("hh:mm aa ss  dd MMM yy", Locale.getDefault()).format(Date())
                     val currentText = "Current time:\n$currentTime"
-                    binding.dateTextView.text = currentTime
+                    binding.dateTextView.text = currentText
                     loop()
                 }
             }
