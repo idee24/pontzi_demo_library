@@ -50,7 +50,7 @@ class MainDialog(private val appContext: Context,
             delay(1000)
             CoroutineScope(Main).launch {
                 if (isActive) {
-                    val currentTime = SimpleDateFormat("hh:mm aa ss  dd MMM yy", Locale.getDefault()).format(Date())
+                    val currentTime = SimpleDateFormat("hh:mm aa   dd MMM yy", Locale.getDefault()).format(Date())
                     val currentText = "Current time:\n$currentTime"
                     binding.dateTextView.text = currentText
                     loop()
