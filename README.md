@@ -1,6 +1,6 @@
 # pontzi_demo_library
 
-![alt text](https://github.com/idee24/penguin_pay/blob/master/screenshot.jpg?raw=true)
+![alt text](https://github.com/idee24/pontzi_demo_library/blob/master/screenshot.jpg?raw=true)
 
 How to add to your project
 --------------
