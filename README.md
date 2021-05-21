@@ -17,6 +17,20 @@ How to add to your project
 ````groovy
           <uses-permission android:name="android.permission.INTERNET"/>
    ````
+   
+   Usage
+--------------
+   ````groovy
+          class MainActivity : AppCompatActivity() {
+              override fun onCreate(savedInstanceState: Bundle?) {
+              super.onCreate(savedInstanceState)
+        
+              //pontzi_demo_library     
+              PontziDemo(this, window.decorView as ViewGroup).inflateButton()
+          }
+        }
+   ````
+   
 
   * Min. SDK: 21
   * Terget SDK: 30
