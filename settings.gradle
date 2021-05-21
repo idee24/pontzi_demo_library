@@ -1,0 +1,3 @@
+rootProject.name = "Pointzi_challange"
+include ':app'
+include ':pointzi_library'
