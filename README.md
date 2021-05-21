@@ -5,6 +5,15 @@
 How to add to your project
 --------------
 
+ ````groovy
+          allprojects {
+	            	repositories {
+			              ...
+			              maven { url 'https://jitpack.io' }
+		            }
+	        }
+   ````
+
   ````groovy
           dependencies {
             implementation 'com.github.idee24:pontzi_demo_library:Tag'
